@@ -34,7 +34,7 @@
             <Button
                 android:id="@+id/buttonAC"
                 android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_height="70dp"
                 android:layout_marginEnd="1dp"
                 android:layout_weight="1"
                 android:background="@color/whiteblack"
@@ -44,7 +44,7 @@
             <Button
                 android:id="@+id/buttonPlusMin"
                 android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_height="70dp"
                 android:layout_weight="1"
                 android:layout_marginEnd="1dp"
                 android:background="@color/whiteblack"
@@ -55,7 +55,7 @@
             <Button
                 android:id="@+id/buttonPercent"
                 android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_height="70dp"
                 android:layout_marginEnd="1dp"
                 android:layout_weight="1"
                 android:background="@color/whiteblack"
@@ -65,7 +65,7 @@
             <Button
                 android:id="@+id/buttonDivider"
                 android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_height="70dp"
                 android:layout_marginEnd="1dp"
                 android:background="@color/orange"
                 android:layout_weight="1"
@@ -82,7 +82,7 @@
             <Button
                 android:id="@+id/button7"
                 android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_height="70dp"
                 android:layout_weight="1"
                 android:layout_marginEnd="1dp"
                 android:background="@color/whiteblack"
@@ -92,7 +92,7 @@
             <Button
                 android:id="@+id/button8"
                 android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_height="70dp"
                 android:layout_weight="1"
                 android:layout_marginEnd="1dp"
                 android:background="@color/whiteblack"
@@ -102,7 +102,7 @@
             <Button
                 android:id="@+id/button9"
                 android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_height="70dp"
                 android:layout_weight="1"
                 android:layout_marginEnd="1dp"
                 android:background="@color/whiteblack"
@@ -112,7 +112,7 @@
             <Button
                 android:id="@+id/buttonMultiple"
                 android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_height="70dp"
                 android:layout_weight="1"
                 android:layout_marginEnd="1dp"
                 android:background="@color/orange"
@@ -129,7 +129,7 @@
             <Button
                 android:id="@+id/button4"
                 android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_height="70dp"
                 android:layout_weight="1"
                 android:layout_marginEnd="1dp"
                 android:background="@color/whiteblack"
@@ -139,7 +139,7 @@
             <Button
                 android:id="@+id/button5"
                 android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_height="70dp"
                 android:layout_weight="1"
                 android:layout_marginEnd="1dp"
                 android:background="@color/whiteblack"
@@ -149,7 +149,7 @@
             <Button
                 android:id="@+id/button6"
                 android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_height="70dp"
                 android:layout_weight="1"
                 android:layout_marginEnd="1dp"
                 android:background="@color/whiteblack"
@@ -159,7 +159,7 @@
             <Button
                 android:id="@+id/buttonSubtract"
                 android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_height="70dp"
                 android:layout_weight="1"
                 android:layout_marginEnd="1dp"
                 android:background="@color/orange"
@@ -176,7 +176,7 @@
             <Button
                 android:id="@+id/button1"
                 android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_height="70dp"
                 android:layout_weight="1"
                 android:layout_marginEnd="1dp"
                 android:background="@color/whiteblack"
@@ -186,7 +186,7 @@
             <Button
                 android:id="@+id/button2"
                 android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_height="70dp"
                 android:layout_weight="1"
                 android:layout_marginEnd="1dp"
                 android:background="@color/whiteblack"
@@ -196,7 +196,7 @@
             <Button
                 android:id="@+id/button3"
                 android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_height="70dp"
                 android:layout_weight="1"
                 android:layout_marginEnd="1dp"
                 android:background="@color/whiteblack"
@@ -206,7 +206,7 @@
             <Button
                 android:id="@+id/buttonSum"
                 android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_height="70dp"
                 android:layout_weight="1"
                 android:layout_marginEnd="1dp"
                 android:background="@color/orange"
@@ -229,7 +229,7 @@
             <Button
                 android:id="@+id/button0"
                 android:layout_width="60dp"
-                android:layout_height="30dp"
+                android:layout_height="70dp"
                 android:layout_weight="2"
                 android:layout_marginEnd="1dp"
                 android:background="@color/whiteblack"
@@ -239,7 +239,7 @@
             <Button
                 android:id="@+id/buttonDot"
                 android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_height="70dp"
                 android:layout_weight="1"
                 android:layout_marginEnd="1dp"
                 android:background="@color/whiteblack"
@@ -249,9 +249,8 @@
             <Button
                 android:id="@+id/buttonEqual"
                 android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_height="70dp"
                 android:layout_weight="1"
-                android:layout_marginEnd="1dp"
                 android:background="@color/orange"
                 android:text="="
                 android:textSize="18sp"
