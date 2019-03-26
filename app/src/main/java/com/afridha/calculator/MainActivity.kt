@@ -7,6 +7,10 @@ import android.widget.Button
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
+    var operator = "*"
+    var oldNum = ""
+    var isNewOp = true
+    var dec = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -14,6 +18,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun buttonNumberEvent(view: View) {
+        if(isNewOp){
+            etShowNum.setText("")
+        }
+        isNewOp = false
         val buttonSelect = view as Button
         var clickValue:String = etShowNum.text.toString()
         when(buttonSelect.id) {
@@ -48,12 +56,72 @@ class MainActivity : AppCompatActivity() {
                 clickValue += "9"
             }
             buttonDot.id->{
-                clickValue += "."
+                if (dec) {
+                    //do nothing
+                } else {
+                    clickValue += "."
+                    dec = true
+                }
             }
             buttonPlusMin.id->{
                 clickValue = "-"+clickValue
             }
         }
         etShowNum.setText(clickValue)
+    }
+
+    fun buttonOperation(view: View) {
+        val buttonSelect = view as Button
+        when (buttonSelect.id) {
+            buttonDivider.id->{
+                operator = "/"
+                dec = false
+            }
+            buttonMultiple.id-> {
+                operator = "*"
+                dec = false
+            }
+            buttonSubtract.id->{
+                operator = "-"
+                dec = false
+            }
+            buttonSum.id->{
+                operator = "+"
+                dec = false
+            }
+        }
+        oldNum = etShowNum.text.toString()
+        isNewOp = true
+    }
+
+    fun buttonEqual(view: View){
+        val newNum = etShowNum.text.toString()
+        var finalNumber:Double? = null
+        when(operator){
+            "*"->{
+                finalNumber = oldNum.toDouble() * newNum.toDouble()
+            }
+            "+"->{
+                finalNumber = oldNum.toDouble() + newNum.toDouble()
+            }
+            "-"->{
+                finalNumber = oldNum.toDouble() - newNum.toDouble()
+            }
+            "/"->{
+                finalNumber = oldNum.toDouble() / newNum.toDouble()
+            }
+        }
+        etShowNum.setText(finalNumber.toString())
+        isNewOp = true
+    }
+
+    fun buttonPercent(view: View){
+        val number = etShowNum.text.toString().toDouble()/100
+        etShowNum.setText(number.toString())
+    }
+
+    fun buttonClean(view: View){
+        etShowNum.setText("0")
+        isNewOp = true
     }
 }
