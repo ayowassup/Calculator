@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
         }
         isNewOp = false
         val buttonSelect = view as Button
+        var numberClick:Int = 0;
         var clickValue:String = etShowNum.text.toString()
         when(buttonSelect.id) {
             button0.id->{
@@ -63,8 +64,17 @@ class MainActivity : AppCompatActivity() {
                     dec = true
                 }
             }
-            buttonPlusMin.id->{
-                clickValue = "-"+clickValue
+            buttonPlusMin.id-> {
+                var isClicked: Boolean = true
+                var currentNumber = clickValue.toDouble()
+                if (isClicked == true) {
+                    currentNumber = currentNumber * -1
+                    isClicked = false
+                } else {
+                    Math.abs(currentNumber)
+                    isClicked = true
+                }
+                clickValue = currentNumber.toString()
             }
         }
         etShowNum.setText(clickValue)
@@ -124,4 +134,5 @@ class MainActivity : AppCompatActivity() {
         etShowNum.setText("0")
         isNewOp = true
     }
+
 }
